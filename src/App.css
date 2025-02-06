@@ -8,3 +8,26 @@
 .overflow-y-auto::-webkit-scrollbar {
     display: none;
 }
+.overflow-auto {
+     /*max-height: 0 !* Set your desired maximum height *!;*/
+     overflow-y: scroll; /* Ensure the overflow is functional */
+ }
+
+/* Hide the scrollbar but make it functional */
+.overflow-auto::-webkit-scrollbar {
+    width: 0; /* This hides the scrollbar */
+}
+
+.overflow-auto::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* For other browsers, ensure overflow is functional */
+.overflow-auto {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
